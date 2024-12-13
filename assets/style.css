@@ -1,0 +1,140 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+body{
+    margin: 0 auto;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* reset css */
+/* body */
+body{
+    background-image: url(./img/bg.png);
+    background-repeat: repeat;
+    min-height: 100vh;
+    width: 100%;
+    padding-bottom: 284px;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.header__logo{
+    width: 31px;
+    height: 25px;
+    margin: auto 100px;
+}
+
+.header-nav{
+    display: flex;
+    text-transform: uppercase;
+    margin: auto 100px;
+}
+
+.header-nav-list__lnk{
+    font-size: 12px;
+    padding: 0 14.63px;
+    color: #191919;
+}
+
+.header-nav-list__lnk:hover{
+    color: #10C9C3;
+    cursor: pointer;
+}
+
+p{
+    font-size: 38px;
+    text-align: center;
+}
+
+.content__2{
+    font-family: Inter;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.boxes__1, .boxes__2, .boxes__3{
+    position: relative;
+    height: 300px;
+    width: calc(100% / 4);
+    background-color: #DDDDDD
+}
+
+.boxes__1:nth-child(2n-1),.boxes__3:nth-child(2n-1) {
+    background-color: #838383;
+}
+
+.boxes__2:nth-child(2n){
+    background-color: #838383;
+}
+
+
+.boxes__box::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    background-image: url(./img/Icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.boxes__box:hover{
+    background-color: #10C9C3;
+}
+.boxes__box:hover::after {
+    opacity: 1;
+}
+
+#footer{
+    width: 100%;
+    height: 284px;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.footer__outline{
+    width: 1140.95px;
+    height: 81.63px;
+    color: #BCBCBC;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__outline__links{
+    width: 168.73px;
+    height: 72.52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
