@@ -18,6 +18,17 @@ p{
 a{
     text-decoration: none;
 }
+
+.header__overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3)
+    display: none;
+}
+
 /* reset css */
 /* body */
 body{
@@ -36,6 +47,7 @@ body{
     display: flex;
     justify-content: space-between;
     justify-items: center;
+    align-items: center;
 }
 
 .header__logo{
@@ -43,7 +55,11 @@ body{
     height: 25px;
     margin: auto 100px;
 }
+.header__toggle{
+    font-size: 40px;
+    display: none;
 
+}
 .header-nav{
     display: flex;
     text-transform: uppercase;
@@ -154,6 +170,44 @@ body{
     justify-content: space-between;
 }
 /* footer */
+/* Responsive mobile */
+@media (max-width: 780px){
+   
+    .header__toggle{
+       display: block;
+    }
+   
+    .header-nav{
+        position: fixed;
+        right: -100%;
+        top: 100px;
+        width: 100%;
+        background-color: #FFFFFF;
+        flex-direction: column;
+        transition: 0.3s;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .header-nav-list__lnk{
+        margin: 16px 0;
+    }
+    .header-nav.active{
+        right: 0;
+    }
+
+    .boxes{
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        background-color: #DDDDDD
+    }
+    .box:nth-child(odd){
+        background-color: #838383;
+    }
+
+
+}
 
 
 
