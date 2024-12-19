@@ -6,6 +6,6 @@ iconBtn.addEventListener("click", () => {
 }
 )
 
-document.querySelectorAll(".header-nav-list__lnk").forEach(n => n.addEventListener("click", (){
+document.querySelectorAll(".header-nav-list__lnk").forEach(n => n.addEventListener("click", () => {
     navMenu.classList.remove("active");
 }))
